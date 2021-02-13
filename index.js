@@ -3,7 +3,7 @@ const graphql = require('./src/graphql')
 
 
 const server = new ApolloServer({
-    ...graphql
+    ...graphql,
 })
 
-server.listen().then(({ url }) => console.log(`🔥 Runing in ${ url } 💪`))
+server.listen().then(({ url}) => console.log(`🔥 ${url} 🌟  `))

@@ -1,25 +1,20 @@
 {
-  "name": "graphql-api-contatos",
+  "name": "graphql-api-02",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -e js,gql",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/allangadelha/graphql-api-contatos.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -e js,gql"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/allangadelha/graphql-api-contatos/issues"
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   },
-  "homepage": "https://github.com/allangadelha/graphql-api-contatos#readme",
   "dependencies": {
-    "apollo-server": "^2.21.0",
+    "apollo-server": "^2.19.2",
     "graphql": "^15.5.0",
     "graphql-tools": "^7.0.3",
     "knex": "^0.21.17",
