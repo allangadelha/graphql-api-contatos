@@ -114,5 +114,5 @@ type Livro implements Publicacao { //tipo de dados "Livro" que implementa a inte
 - variables: é possível criar variáveis, onde o valor da variável é informada no "Playground" em "QUERY VARIABLES";
 - directives: identificador para realização de operações específicas, como verificações condicionais;
 - input: auxiliar no reuso do código agrupando atributos que se repetem em vários trechos;
-- info: parâmetro que retorna informações mais baixo nível relacionadas a consulta;
-- context: 
+- info: quatro parâmetro que retorna informações mais baixo nível relacionadas a consulta;
+- context: terceiro parâmetro que ajuda em injeção de dependências e refatoração do código;
