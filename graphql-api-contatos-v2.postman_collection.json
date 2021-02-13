@@ -6,29 +6,6 @@
 	},
 	"item": [
 		{
-			"name": "Mutation - criar contato",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "graphql",
-					"graphql": {
-						"query": "mutation {\n    criarContato(\n        data: {\n            nome: \"Allan Gadelha\",\n            email: \"allan@email.com\",\n            telefone: \"85996830136\"\n        }\n    ){\n        id\n        nome\n    }\n}",
-						"variables": ""
-					}
-				},
-				"url": {
-					"raw": "http://localhost:4000",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "4000"
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "Query - listar contatos",
 			"request": {
 				"method": "POST",
@@ -52,6 +29,52 @@
 			"response": []
 		},
 		{
+			"name": "Query - consultar um usuário",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\n    contato(id: 4) {\n        id\n        nome\n        email\n        telefone\n    }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mutation - criar contato",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation {\n    criarContato(\n        data: {\n            nome: \"Lucca Gadelha Xavier\",\n            email: \"lucca@email.com\",\n            telefone: \"85996830136\"\n        }\n    ){\n        id\n        nome\n    }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000"
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Mutation - atualizar contato",
 			"request": {
 				"method": "POST",
@@ -59,7 +82,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "mutation {\n    atualizarContato(\n        id: 1\n        data: {\n            nome: \"Allan Gadelha Xavier\"\n        }\n    ){\n        id\n        nome\n    }\n}",
+						"query": "mutation {\n    atualizarContato(\n        id: 2\n        data: {\n            nome: \"Allan Gadelha Xavier\"\n        }\n    ){\n        id\n        nome\n    }\n}",
 						"variables": ""
 					}
 				},
@@ -82,7 +105,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "mutation {\n    deletarContato(\n        filtro: {\n            id: 1\n        }\n    )\n}",
+						"query": "mutation {\n    deletarContato(\n        filtro: {\n            id: 3\n        }\n    )\n}",
 						"variables": ""
 					}
 				},

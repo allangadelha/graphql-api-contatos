@@ -18,6 +18,7 @@ input FiltroInput {
 }
 
 type Query {
+    contato(id: Int!):Contato
     contatos: [Contato]
 }
 
